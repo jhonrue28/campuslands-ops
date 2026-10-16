@@ -1,0 +1,136 @@
+{
+  "dataset": "synthetic",
+  "notice": "Datos de demostración sintéticos. No son datos oficiales de Campuslands. No existían archivos oficiales en el repositorio.",
+  "spaces": [
+    {
+      "id": "aula-101",
+      "name": "Aula 101",
+      "location": "Edificio A, piso 1",
+      "capacity": 30,
+      "status": "available",
+      "features": ["proyector", "pizarra", "aire acondicionado"],
+      "description": "Aula teórica de uso general. Registro sintético."
+    },
+    {
+      "id": "aula-102",
+      "name": "Aula 102",
+      "location": "Edificio A, piso 1",
+      "capacity": 24,
+      "status": "available",
+      "features": ["pizarra"],
+      "description": "Aula teórica pequeña. Registro sintético."
+    },
+    {
+      "id": "lab-sistemas",
+      "name": "Laboratorio de sistemas",
+      "location": "Edificio B, piso 2",
+      "capacity": 20,
+      "status": "available",
+      "features": ["computadores", "proyector", "red cableada"],
+      "description": "Laboratorio con puestos individuales. Registro sintético."
+    },
+    {
+      "id": "auditorio",
+      "name": "Auditorio central",
+      "location": "Edificio C",
+      "capacity": 120,
+      "status": "available",
+      "features": ["sonido", "escenario", "proyector"],
+      "description": "Espacio para eventos. Registro sintético."
+    },
+    {
+      "id": "sala-reuniones",
+      "name": "Sala de reuniones",
+      "location": "Edificio A, piso 2",
+      "capacity": 8,
+      "status": "disabled",
+      "features": ["pantalla"],
+      "description": "Espacio inhabilitado para probar el rechazo de reservas. Registro sintético."
+    },
+    {
+      "id": "taller-electronica",
+      "name": "Taller de electrónica",
+      "location": "Edificio B, piso 1",
+      "capacity": 16,
+      "status": "maintenance",
+      "features": ["bancos de trabajo"],
+      "description": "Espacio en mantenimiento. Registro sintético."
+    }
+  ],
+  "resources": [
+    {
+      "id": "portatil-01",
+      "name": "Portátil 01",
+      "category": "computador",
+      "location": "Almacén de tecnología",
+      "status": "available",
+      "serial_number": "SYN-LAP-01",
+      "notes": "Unidad individual sintética."
+    },
+    {
+      "id": "portatil-02",
+      "name": "Portátil 02",
+      "category": "computador",
+      "location": "Almacén de tecnología",
+      "status": "available",
+      "serial_number": "SYN-LAP-02",
+      "notes": "Unidad individual sintética."
+    },
+    {
+      "id": "proyector-01",
+      "name": "Proyector 01",
+      "category": "audiovisual",
+      "location": "Almacén de tecnología",
+      "status": "available",
+      "serial_number": "SYN-PRY-01",
+      "notes": "Unidad individual sintética."
+    },
+    {
+      "id": "proyector-02",
+      "name": "Proyector 02",
+      "category": "audiovisual",
+      "location": "Taller",
+      "status": "damaged",
+      "serial_number": "SYN-PRY-02",
+      "notes": "Marcado como dañado en los datos sintéticos. No se puede prestar."
+    },
+    {
+      "id": "tablet-01",
+      "name": "Tableta 01",
+      "category": "computador",
+      "location": "Almacén de tecnología",
+      "status": "disabled",
+      "serial_number": "SYN-TAB-01",
+      "notes": "Unidad inhabilitada. Registro sintético."
+    }
+  ],
+  "reservations": [],
+  "loans": [
+    {
+      "id": "prestamo-hist-01",
+      "resource_id": "portatil-02",
+      "borrower_name": "Ana Ruiz",
+      "borrower_contact": "ana.ruiz@example.edu",
+      "purpose": "Práctica de redes. Registro sintético ya devuelto.",
+      "status": "returned",
+      "loaned_at": "2026-10-01T09:00:00",
+      "due_at": "2026-10-01T17:00:00",
+      "returned_at": "2026-10-01T16:30:00"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "inc-sint-01",
+      "title": "Filtración en el pasillo del edificio B",
+      "description": "Hay una filtración de agua en el pasillo del edificio B, junto al taller. Registro sintético cargado manualmente, sin análisis de IA.",
+      "category": "infraestructura",
+      "priority": "alta",
+      "responsible_area": "mantenimiento",
+      "recommendation": "Señalizar el área y revisar la cubierta.",
+      "rationale": "Dato de demostración importado. No proviene de un modelo de IA.",
+      "status": "open",
+      "source": "manual",
+      "space_id": "taller-electronica"
+    }
+  ]
+}
